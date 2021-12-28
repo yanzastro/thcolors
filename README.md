@@ -8,14 +8,19 @@ To use these colours, just copy the .py file to your working directory and impor
 Example:
 
 from thcolors import *
+
 import numpy as np
+
 import matplotlib.pyplot as plt
 
 x = np.linspace(0, 10)
+
 y1 = 2 * x
+
 y2 = 3 * x
 
 plt.plot(x, y1, c='hina1')
+
 plt.plot(x, y1, c='hina2')
 
 =========================Chinese version=====================================
@@ -27,13 +32,18 @@ plt.plot(x, y1, c='hina2')
 使用示例：
 
 from thcolors import *
+
 import numpy as np
+
 import matplotlib.pyplot as plt
 
 x = np.linspace(0, 10)
+
 y1 = 2 * x
+
 y2 = 3 * x
 
 plt.plot(x, y1, c='hina1')
+
 plt.plot(x, y1, c='hina2')
 
