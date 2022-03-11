@@ -151,6 +151,9 @@ c = {'hina1':"#34BB7E",   # 键山雏
 mcolors.get_named_colors_mapping().update(c)
 
 def print_name():
+    '''
+    Print the name of available characters.
+    '''
     name_last = 'hina'
     for name_,dict_ in c.items():
         name = name_[:-1]
@@ -158,4 +161,17 @@ def print_name():
             continue
         print(name)
         name_last = name
+     return
+
+
+def plot_demo(name, ax):
+    '''
+    Plot a demo of colours of a given character.
+    '''
+    for i in range(10):
+        if (name+str(i+1) in c) is False:
+            break
+        ax.axvline(i, 0, 1, c=c[name+str(i+1)], label=name+str(i+1), lw=2)    
+    ax.legend()
+    ax.set_xlim(-1, i)
     return
